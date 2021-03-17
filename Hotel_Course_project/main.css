@@ -1,0 +1,1388 @@
+                    @import url("https://use.typekit.net/iok6lxj.css");
+                    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+                    * {
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    body {
+                        font-family: 'playfair-display', serif;
+                        color: #222222;
+                    }
+                    
+                    .center {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    
+                    a {
+                        color: #222222;
+                    }
+                    
+                    header {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        min-height: 100vh;
+                        max-height: fit-content;
+                        background-image: url('img/bg.png');
+                        background-size: cover;
+                        text-align: center;
+                        position: relative;
+                    }
+                    
+                    header::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        right: 0;
+                        left: 0;
+                        background-color: rgba(255, 228, 196, 0.103);
+                        backdrop-filter: blur(2px);
+                    }
+                    
+                    .logo {
+                        margin-top: 152px;
+                        display: block;
+                        position: relative;
+                        width: 156px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    
+                    .logo h1 {
+                        font-family: 'Raleway', sans-serif;
+                        font-weight: bold;
+                        font-size: 60px;
+                        letter-spacing: 3px;
+                        text-align: center;
+                    }
+                    
+                    .logo::after {
+                        content: '';
+                        width: 14px;
+                        height: 14px;
+                        background-color: #222222;
+                        position: absolute;
+                        border-radius: 50%;
+                        bottom: 90%;
+                        right: 25%;
+                    }
+                    
+                    footer .logo::after {
+                        background-color: #F8F8F8;
+                    }
+                    
+                    .logo::before {
+                        content: 'hotel';
+                        font-family: 'Nunito', sans-serif;
+                        font-weight: 600;
+                        font-size: 16px;
+                        letter-spacing: 1.6px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
+                        transform: translate(-50%, 100%);
+                    }
+                    /* .dot {
+    position: absolute;
+    background-color: #222222;
+    min-width: 15px;
+    min-height: 16px;
+    top: -5px;
+    right: 340px;
+    border-radius: 50px;
+} */
+                    
+                    nav {
+                        margin-top: 30px;
+                        position: relative;
+                    }
+                    
+                    nav ul li {
+                        display: inline;
+                        list-style: none;
+                        margin-left: 103px;
+                    }
+                    
+                    nav ul li:first-of-type {
+                        margin-left: 0;
+                    }
+                    
+                    nav a {
+                        font-family: 'Muli', sans-serif;
+                        font-weight: bold;
+                        text-decoration: none;
+                        color: #222222;
+                        font-size: 20px;
+                    }
+                    
+                    header {
+                        text-align: center;
+                        position: relative;
+                        box-sizing: border-box;
+                    }
+                    
+                    header .search-form {
+                        position: absolute;
+                        right: 26%;
+                        top: 192px;
+                    }
+                    
+                    header .search-form input {
+                        font-family: 'Muli', sans-serif;
+                        border: none;
+                        border-bottom: solid 1px #22222250;
+                        background: none;
+                        padding-left: 15px;
+                        font-size: 14px;
+                        letter-spacing: 0.14px;
+                    }
+                    
+                    header .search-form input:focus {
+                        outline: none;
+                        font-family: 'Muli', sans-serif;
+                        color: #556067;
+                        font-size: 14px;
+                    }
+                    
+                    header .search-form::before {
+                        content: '';
+                        background-image: url('img/search.svg');
+                        position: absolute;
+                        width: 12px;
+                        height: 12px;
+                    }
+                    
+                    header .search-form::after {
+                        position: absolute;
+                        content: '';
+                        background-image: url('img/globe.svg');
+                        width: 23px;
+                        height: 23px;
+                        margin-left: 51px;
+                        bottom: 0%;
+                    }
+                    
+                    header p {
+                        position: relative;
+                    }
+                    
+                    header p:first-of-type {
+                        font-family: 'Muli', sans-serif;
+                        font-weight: normal;
+                        font-size: 60px;
+                        letter-spacing: 2.4px;
+                        max-width: 735px;
+                        margin-top: 100px;
+                    }
+                    
+                    header p:nth-of-type(2) {
+                        font-size: 16px;
+                        letter-spacing: 0.96px;
+                        margin-top: 16px;
+                        max-width: 541px;
+                        text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.161);
+                        text-align: center;
+                        /* padding-left: 100px; */
+                    }
+                    /* ------------------------------------------------------------------------------------------------------------------------------------
+           BUTTONS
+------------------------------------------------------------------------------------------------------------------------------------- */
+                    
+                    .btn {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        letter-spacing: 0.56px;
+                        color: #556067;
+                        border: solid 3px #556067;
+                        font: normal normal 800 14px/18px 'Muli';
+                        height: 50px;
+                        transition: color 0.35s ease-in-out;
+                        cursor: pointer;
+                        margin-right: auto;
+                        margin-left: auto;
+                    }
+                    
+                    .btn span {
+                        transform: translateY(15%);
+                        z-index: 3;
+                    }
+                    
+                    .btn.more {
+                        width: 196px;
+                    }
+                    
+                    .btn.more.q {
+                        width: 218px;
+                    }
+                    /* .btn::before {
+        content: url("calendar.svg");
+    } */
+                    
+                    .btn.more.rev {
+                        width: 232px;
+                    }
+                    
+                    .btn.less {
+                        width: 184px;
+                    }
+                    
+                    .btn.more.spe {
+                        width: 222px;
+                    }
+                    
+                    .btn.buy {
+                        width: 210px;
+                        background-color: #556067;
+                        color: #F8F8F8;
+                    }
+                    
+                    .btn.rooms {
+                        min-width: 222px;
+                        background-color: #556067;
+                        color: #F8F8F8;
+                    }
+                    
+                    .btn.more::after,
+                    .btn.less::after {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        background-color: #556067;
+                        height: 100%;
+                        width: 0;
+                        transition: all 0.35s ease-in-out;
+                    }
+                    
+                    .btn.more:hover span,
+                    .btn.less:hover span {
+                        color: #F8F8F8;
+                    }
+                    
+                    .more:hover::after,
+                    .btn.less:hover::after {
+                        width: 100%;
+                    }
+                    
+                    .nav li {
+                        cursor: pointer;
+                    }
+                    /* input[type="date"]::-webkit-calendar-picker-indicator {
+        opacity: 0;
+        z-index: 2;
+    } */
+                    /* input#start-date {
+        position: relative;
+        width: 159px;
+        height: 38px;
+        border: 1px solid #707070;
+        background-color: #222222;
+        color: #F8F8F8;
+        z-index: 0;
+    } */
+                    /* .booking-form input::before {
+        position: absolute;
+        content: '';
+        background-image: url('calendar.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 30px;
+        z-index: 50;
+        right: 5px;
+        height: 80%;
+    } */
+                    /*======================================
+ BOOKING FORM
+ ====================================== */
+                    
+                    .booking-form {
+                        background-color: #222222;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        width: 1110px;
+                        height: 172px;
+                        margin-top: 207px;
+                        padding-left: 97px;
+                        padding-right: 113px;
+                        box-sizing: border-box;
+                    }
+                    
+                    .form-block {
+                        color: #F8F8F8;
+                        display: flex;
+                        flex-direction: column;
+                        text-align: left;
+                    }
+                    
+                    .booking-form .form-block input {
+                        width: 160px;
+                        height: 38px;
+                        background-color: #222222;
+                        border: 1px solid rgba(112, 112, 112, 0.7);
+                        color: #F8F8F8;
+                        background-image: url('calendar.svg');
+                        background-position: 130px 7px;
+                        background-repeat: no-repeat;
+                    }
+                    
+                    .booking-form .form-block select {
+                        width: 60px;
+                        height: 38px;
+                        background-color: #222222;
+                        border: 1px solid rgba(112, 112, 112, 0.7);
+                        color: #F8F8F8;
+                    }
+                    
+                    .booking-form .form-block label {
+                        margin-bottom: 13px;
+                        font: normal normal normal 12px/15px Muli;
+                        letter-spacing: 0px;
+                        color: #F8F8F8;
+                        opacity: 0.9;
+                    }
+                    /* 
+    datepicker
+    */
+                    
+                    .calendar {
+                        width: 210px;
+                        height: 240px;
+                        position: absolute;
+                        z-index: 50;
+                        top: 0;
+                        left: 50%;
+                        transform: translate(-50%, -100%);
+                        border: 1px solid black;
+                        box-sizing: border-box;
+                        /* overflsow: hidden; */
+                    }
+                    
+                    .calendar .message {
+                        position: absolute;
+                        top: -1px;
+                        left: 0;
+                        transform: translateY(-100%);
+                        width: 100%;
+                        background-color: #222222;
+                        color: #F8F8F8;
+                        padding: 5px;
+                        box-sizing: border-box;
+                        border: 1px solid black;
+                    }
+                    
+                    .calendar .year {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        height: 30px;
+                        background-color: #222222;
+                    }
+                    
+                    .calendar .year span.er {
+                        color: #F8F8F8;
+                        font: normal normal normal 12px/25px Muli;
+                        margin: 0;
+                    }
+                    
+                    .calendar table {
+                        width: 100%;
+                        height: 210px;
+                        border: none;
+                        border-collapse: collapse;
+                    }
+                    
+                    .calendar thead th {
+                        height: 30px;
+                        background: #EBEBEB;
+                        text-align: center;
+                        font: normal normal 200 12px/15px Muli;
+                        letter-spacing: 0.36px;
+                        color: #707070;
+                    }
+                    
+                    .calendar thead {
+                        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.161);
+                    }
+                    
+                    .calendar tbody {
+                        background: #F2F2F2;
+                        height: 180px;
+                        font: normal normal normal 12px/15px Muli;
+                        letter-spacing: 0px;
+                        color: #000000;
+                        text-shadow: 0px 1px 2px #00000029;
+                    }
+                    
+                    .calendar .year .iconify {
+                        color: snow;
+                        cursor: pointer;
+                    }
+                    
+                    .calendar .current {
+                        border: 1px solid #87A8A8;
+                    }
+                    
+                    .calendar th,
+                    .calendar td {
+                        max-width: 30px;
+                        max-height: 30px;
+                    }
+                    
+                    .calendar .checked {
+                        background: #222222;
+                        color: #EBEBEB;
+                    }
+                    
+                    .checkRooms {
+                        position: fixed;
+                        width: 100vw;
+                        height: 100vh;
+                        background: #EBEBEB;
+                        z-index: 50;
+                        top: 0;
+                        left: 0;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    
+                    .error {
+                        border: 1px solid red!important;
+                    }
+                    
+                    .checkRooms a.close {
+                        position: absolute;
+                        top: 20px;
+                        right: 40px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                    
+                    .roomboxone,
+                    .roomboxsecond,
+                    .roombox {
+                        display: flex;
+                    }
+                    
+                    .roombox {
+                        justify-content: space-between;
+                    }
+                    
+                    .roombox .price {
+                        margin: 0 5px;
+                    }
+                    
+                    .roombox .roomboxone span {
+                        margin: 10px 5px 0 5px;
+                        font-size: 20px;
+                    }
+                    
+                    .roombox img {
+                        width: 100px;
+                        padding-bottom: 50px;
+                    }
+                    /* .calendar th {
+        border: none;
+    } */
+                    /* 
+MAIN
+*/
+                    
+                    .content {
+                        max-width: 1110px;
+                        margin-left: auto;
+                        margin-right: auto;
+                        box-sizing: border-box;
+                        text-align: center;
+                    }
+                    
+                    section h2,
+                    .checkRooms h2 {
+                        text-align: center;
+                        font: normal normal 900 48px/60px Muli;
+                        letter-spacing: 0px;
+                        color: #222222;
+                        margin-top: 120px;
+                        margin-bottom: 100px;
+                    }
+                    
+                    .stats {
+                        display: flex;
+                        justify-content: center;
+                        flex-wrap: wrap;
+                    }
+                    
+                    .stat {
+                        width: 350px;
+                        height: 75px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-sizing: border-box;
+                    }
+                    
+                    .stat:nth-child(4),
+                    .stat:nth-child(5) {
+                        width: 445px;
+                        margin-top: 75px;
+                    }
+                    
+                    .stats .num {
+                        text-align: center;
+                        font: normal normal 900 60px/75px 'Muli';
+                        letter-spacing: 0px;
+                        color: #87A8A8;
+                    }
+                    
+                    .stat p {
+                        text-align: left;
+                        font: normal normal 600 20px/25px 'Muli';
+                        letter-spacing: 0.6px;
+                        color: #222222;
+                        text-transform: uppercase;
+                        padding-left: 30px;
+                    }
+                    
+                    .room {
+                        display: flex;
+                        margin-bottom: 120px;
+                        justify-content: space-between;
+                    }
+                    
+                    section .nav {
+                        width: 35%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-right: auto;
+                        margin-left: auto;
+                        margin-bottom: 100px;
+                    }
+                    
+                    section .nav li {
+                        list-style: none;
+                        text-align: center;
+                        font: normal normal 700 20px/25px Muli;
+                        letter-spacing: 0px;
+                        color: #222222;
+                        text-transform: capitalize;
+                        position: relative;
+                    }
+                    
+                    ul.nav ul.drop {
+                        background: #D9E0DA!important;
+                        display: none;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        z-index: 50;
+                        box-sizing: border-box;
+                        width: 128px;
+                    }
+                    
+                    ul.nav ul.drop li {
+                        padding: 10px 15px;
+                        font: normal normal 300 20px/25px Muli;
+                    }
+                    
+                    ul.nav ul.drop li.active,
+                    ul.nav ul.drop li:hover {
+                        font: normal normal bold 20px/25px Muli;
+                        text-decoration: none;
+                    }
+                    
+                    ul.nav li:hover ul.drop {
+                        display: block;
+                    }
+                    /* .room .room-content,
+    .room .room-foto {
+        flex: 1 1;
+    } */
+                    
+                    .room-content-second p,
+                    .room-content p {
+                        padding-top: 50px;
+                        padding-bottom: 60px;
+                        width: 445px;
+                    }
+                    
+                    .room-foto {
+                        width: 445px;
+                        height: 343px;
+                    }
+                    
+                    .room-foto img {
+                        width: 100%;
+                    }
+                    
+                    .room .room-content {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        box-sizing: border-box;
+                        width: 540px;
+                    }
+                    /*     
+    .room:nth-child(odd) .room-content {
+        align-items: flex-start;
+    }
+    
+    .room:nth-child(odd) .room-foto {
+        text-align: right;
+    } */
+                    
+                    h3 {
+                        font: normal normal bold 20px/27px Playfair Display;
+                        letter-spacing: 0px;
+                        color: #222222;
+                        text-transform: uppercase;
+                    }
+                    
+                    .room .room-content h3 {
+                        transform: translateY(-6px);
+                    }
+                    
+                    .room .room-content ul {
+                        list-style-image: url('img/correct-symbol.svg');
+                        margin-top: 25px;
+                        list-style-position: inside;
+                        padding-left: 0;
+                    }
+                    
+                    .room .room-content ul li {
+                        font: normal normal normal 18px/30px Playfair Display;
+                        letter-spacing: 0px;
+                        color: #222222;
+                        margin-bottom: 20px;
+                    }
+                    
+                    .room .room-content ul li:last-child {
+                        margin-bottom: 0;
+                    }
+                    
+                    .room .room-content a {
+                        text-decoration: underline;
+                        font: normal normal bold 14px/19px Playfair Display;
+                        letter-spacing: 0.56px;
+                        color: #222222;
+                        margin-top: 31px;
+                        margin-bottom: 59px;
+                    }
+                    
+                    .room .room-content .booking {
+                        position: relative;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        margin-top: 80px;
+                    }
+                    
+                    .room {
+                        text-align: left;
+                    }
+                    
+                    .room .room-content .price,
+                    .checkRooms .price {
+                        position: relative;
+                        font: normal normal normal 44px/32px Playfair Display;
+                        letter-spacing: 0.44px;
+                        text-align: center;
+                        padding-top: 5px;
+                    }
+                    
+                    .room .room-content .price::before,
+                    .checkRooms .price::before {
+                        content: '';
+                        position: absolute;
+                        top: -10%;
+                        right: 50%;
+                        transform: translateX(45%);
+                        width: 75px;
+                        height: 65px;
+                        background: #D9E0DA;
+                        z-index: -1;
+                    }
+                    
+                    .room .room-content .price span,
+                    .checkRooms .price span {
+                        font: normal normal 24px/32px Playfair Display;
+                        letter-spacing: 0.24px;
+                    }
+                    
+                    .room .iconify {
+                        margin-top: 31px;
+                        font-size: 3rem;
+                        color: #87A8A8;
+                        margin-right: 48px;
+                    }
+                    
+                    .room .iconify:nth-child(5) {
+                        margin-right: 0;
+                    }
+                    /* ROOM Gallery */
+                    
+                    .room-foto {
+                        position: relative;
+                    }
+                    
+                    .room-foto img {
+                        display: none;
+                    }
+                    
+                    .room-foto img.display {
+                        display: block;
+                    }
+                    
+                    .foto-forward,
+                    .foto-back {
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    
+                    .room-foto .iconify {
+                        color: #F8F8F8;
+                        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.161);
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    .foto-forward {
+                        right: 0;
+                    }
+                    
+                    .foto-count {
+                        display: flex;
+                        justify-content: center;
+                        margin: 0 auto;
+                        position: absolute;
+                        bottom: 10px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    
+                    .foto-count span {
+                        width: 10px;
+                        height: 10px;
+                        border: solid 2px #F8F8F8;
+                        border-radius: 50%;
+                        margin: 0 5px;
+                    }
+                    
+                    .foto-count span.active {
+                        background: #F8F8F8;
+                    }
+                    
+                    .room-foto p {
+                        max-width: 100%;
+                    }
+                    /* ========================================== 
+Paslaugos
+================================================*/
+                    
+                    .restourant {
+                        max-width: 690px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    
+                    .restourant .options {
+                        display: flex;
+                    }
+                    
+                    .restourant ul {
+                        flex: 1;
+                        text-align: left;
+                        list-style: none;
+                    }
+                    
+                    .restourant ul li:nth-child(2) {
+                        margin: 35px 0;
+                    }
+                    
+                    .restourant ul li .iconify {
+                        margin-right: 45px;
+                        font-size: 2rem;
+                        color: #556067;
+                    }
+                    
+                    .restourant h3 {
+                        margin-top: 60px;
+                        margin-bottom: 40px;
+                    }
+                    
+                    .restourant .btn {
+                        margin-top: 100px;
+                    }
+                    /* ===============================================================
+    Gallery
+    ==================================================================*/
+                    
+                    .gallery {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        /* flex-wrap: wrap;
+        justify-content: space-between; */
+                    }
+                    
+                    .gallery-row {
+                        display: flex;
+                        flex-wrap: wrap;
+                        box-sizing: border-box;
+                    }
+                    
+                    .gallery-img {
+                        flex: 25%;
+                        min-width: 25%;
+                        padding: 10px;
+                        overflow: hidden;
+                        box-sizing: border-box;
+                        min-width: 255px;
+                        max-width: 50%;
+                    }
+                    
+                    .gallery-img img {
+                        transition: transform 0.5s;
+                    }
+                    
+                    .gallery-img img:hover {
+                        transform: scale(1.1);
+                    }
+                    
+                    .gallery-img-view {
+                        position: fixed;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        box-sizing: border-box;
+                        background-color: rgba(7, 8, 9, 0.7);
+                        overflow: hidden;
+                    }
+                    
+                    .img-background {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: snow;
+                        height: fit-content;
+                        width: fit-content;
+                        min-width: 40%;
+                        padding: 10px;
+                        box-sizing: border-box;
+                    }
+                    
+                    .img-background p {
+                        position: absolute;
+                        bottom: 0;
+                        transform: translateY(100%);
+                        text-align: left;
+                        font: normal normal 600 18px/23px Muli;
+                        letter-spacing: 0.54px;
+                        color: #F8F8F8;
+                        text-transform: uppercase;
+                        padding-top: 10px;
+                    }
+                    
+                    .img-background p span {
+                        font: normal normal normal 14px/25px Muli;
+                        letter-spacing: 0px;
+                        color: #F8F8F8;
+                        opacity: 0.5;
+                        text-transform: none;
+                    }
+                    
+                    .gallery-img-view .fluid {
+                        height: 100%;
+                    }
+                    
+                    .gallery .foto-forward {
+                        position: absolute;
+                        right: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    
+                    .gallery .foto-back .iconify,
+                    .gallery .foto-forward .iconify {
+                        font-size: 3rem;
+                        color: snow;
+                        padding: 5px;
+                    }
+                    
+                    .gallery .foto-back {
+                        position: absolute;
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    
+                    .gallery .foto-close {
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        transform: translateY(100%);
+                    }
+                    
+                    .gallery .foto-close .iconify {
+                        font-size: 3rem;
+                        color: snow;
+                    }
+                    /* ==========================================================
+    REVIEWS
+    ============================================================== */
+                    
+                    .reviews-block {
+                        position: relative;
+                    }
+                    
+                    .rev-forward,
+                    .rev-back {
+                        width: 40px;
+                        height: 40px;
+                        background-color: #556067;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    
+                    .rev-forward .iconify,
+                    .rev-back .iconify {
+                        color: #FEF9F0;
+                        font-size: 1.5rem;
+                    }
+                    
+                    .rev-forward {
+                        right: 0;
+                    }
+                    
+                    .rev-back {
+                        left: 0;
+                    }
+                    
+                    .reviews {
+                        display: flex;
+                        padding: 0 40px;
+                    }
+                    
+                    .review {
+                        flex: 1;
+                        text-align: center;
+                    }
+                    
+                    .review h3 {
+                        text-align: center;
+                        font: normal normal bold 28px/37px Playfair Display;
+                        text-transform: none;
+                        padding-bottom: 20px;
+                    }
+                    
+                    .review p {
+                        font: normal normal normal 20px/35px Playfair Display;
+                        margin-bottom: 20px;
+                    }
+                    
+                    .rev-count {
+                        display: flex;
+                        width: 20%;
+                        justify-content: center;
+                        margin: 0 auto;
+                    }
+                    
+                    .rev-count span {
+                        width: 14px;
+                        height: 14px;
+                        background-color: #87A8A8;
+                        border-radius: 50%;
+                        margin: 0 5px;
+                    }
+                    
+                    .rev-count span.active {
+                        background-color: #556067;
+                    }
+                    /* ==========================================================================
+HOWTOFIND
+============================================================================== */
+                    
+                    .how-tofind {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                    
+                    .how-block {
+                        text-align: left;
+                    }
+                    
+                    .find {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 50px;
+                    }
+                    
+                    .find p span {
+                        font-weight: bold;
+                    }
+                    
+                    .find img {
+                        margin-right: 30px;
+                    }
+                    
+                    .reach ul li {
+                        display: flex;
+                        align-items: center;
+                    }
+                    
+                    .reach .iconify {
+                        font-size: 2.5rem;
+                        color: #87A8A8;
+                        margin-right: 50px;
+                    }
+                    
+                    .reach ul li {
+                        margin-top: 50px;
+                    }
+                    
+                    .reach ul li p,
+                    .find p {
+                        font: normal normal normal 18px/30px Playfair Display;
+                    }
+                    
+                    .reach ul li p span {
+                        font-weight: bold;
+                    }
+                    
+                    .reach ul li h4 {
+                        font: normal normal bold 14px/19px Playfair Display;
+                        letter-spacing: 0px;
+                        color: #556067;
+                        text-transform: uppercase;
+                        opacity: 0.7;
+                        margin-left: 30px;
+                        align-self: flex-start;
+                    }
+                    
+                    .how-block h3 {
+                        padding-bottom: 10px;
+                    }
+                    /* =============================================================
+    NEAR US
+    ================================================================ */
+                    
+                    .places {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 100px;
+                    }
+                    
+                    .place {
+                        width: 4rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    
+                    .places .iconify {
+                        font-size: 4rem;
+                        color: #87A8A8;
+                        margin-bottom: 25px;
+                    }
+                    
+                    .place h4 {
+                        text-transform: uppercase;
+                        text-align: center;
+                        font: normal normal 600 20px/25px Muli;
+                        letter-spacing: 0.6px;
+                    }
+                    /* ==============================================================
+    FAQ
+    =================================================================== */
+                    
+                    .faq {
+                        padding: 0 50px;
+                        margin-bottom: 100px;
+                    }
+                    
+                    @media screen and (max-width: 1024px) {
+                        .faq {
+                            padding: 0 5px;
+                        }
+                    }
+                    
+                    .faq-content {
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.3s ease-out;
+                    }
+                    
+                    .faq-num {
+                        font: normal normal 900 48px/60px Muli;
+                        letter-spacing: 0px;
+                        color: #87A8A8;
+                        margin-right: 48px;
+                        width: fit-content;
+                    }
+                    
+                    .faq-item {
+                        text-align: left;
+                        font: normal normal normal 20px/25px Playfair Display;
+                        display: flex;
+                        margin-bottom: 10px;
+                    }
+                    
+                    .faq-item p {
+                        text-align: left;
+                        max-width: 100%;
+                        padding-right: 10px;
+                    }
+                    
+                    .faq-item.active-faq p {
+                        font: normal normal bold 20px/25px Playfair Display;
+                        opacity: 0.8;
+                        text-decoration: none;
+                    }
+                    
+                    .faq .toggle {
+                        margin-left: auto;
+                    }
+                    
+                    .faq-content p {
+                        text-align: left;
+                        font: italic normal normal 16px/30px Playfair Display;
+                        max-width: 730px;
+                        margin: 0 auto 20px auto;
+                    }
+                    
+                    .toggle .iconify {
+                        color: #556067;
+                        font-size: 2rem;
+                    }
+                    /* ===========================================================
+    FOOTER
+    =============================================================== */
+                    
+                    footer {
+                        background: #222222;
+                        height: 240px;
+                        color: #F8F8F8;
+                        display: flex;
+                        align-items: center;
+                        margin-top: 130px;
+                    }
+                    
+                    footer h3,
+                    footer p {
+                        color: #F8F8F8;
+                        font: normal normal normal 14px/25px Muli;
+                    }
+                    
+                    footer {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        text-align: left;
+                        padding: 0 350px;
+                    }
+                    
+                    footer .logo {
+                        margin: 0;
+                    }
+                    /* ============================================================ */
+                    
+                    .displaynone {
+                        display: none;
+                    }
+                    
+                    .fluid {
+                        width: 100%;
+                    }
+                    
+                    .nav .active,
+                    .nav li:hover,
+                    nav a:hover {
+                        font: normal 900 20px/25px Muli;
+                        /* border-bottom: 1px solid #222222; */
+                        text-decoration: underline;
+                    }
+                    
+                    @media only screen and (max-width: 1024px) {
+                        .gallery {
+                            padding: 0 10px;
+                        }
+                        .gallery-img {
+                            flex: 50%;
+                            min-width: 50%;
+                            max-width: 100%;
+                        }
+                        .content,
+                        .booking-form {
+                            width: 80%;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        label {
+                            margin-top: 10px;
+                        }
+                        .booking-form {
+                            height: auto;
+                            margin-top: 30px;
+                            padding: 10px 50px 10px 50px;
+                        }
+                        .room,
+                        .booking-form,
+                        .how-tofind,
+                        .reviews {
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                        footer {
+                            height: fit-content;
+                            flex-wrap: wrap;
+                            flex-direction: column;
+                            padding: 0;
+                        }
+                        footer .logo,
+                        footer .contacts,
+                        footer .social {
+                            margin: 30px;
+                        }
+                        .logo {
+                            margin-top: 50px;
+                        }
+                        .stat {
+                            margin-top: 30px;
+                        }
+                        .stat:nth-child(4),
+                        .stat:nth-child(5) {
+                            display: none;
+                        }
+                        section .nav {
+                            width: 80%;
+                        }
+                        .places {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        .place {
+                            min-width: 100px;
+                            padding: 10px;
+                        }
+                        .restourant .options {
+                            flex-direction: column;
+                        }
+                        header {
+                            height: fit-content;
+                            padding-bottom: 50px;
+                        }
+                    }
+                    
+                    @media only screen and (max-width: 1230px) {
+                        footer {
+                            padding: 0 50px;
+                        }
+                        .places {
+                            display: flex;
+                            flex-wrap: wrap;
+                        }
+                        .place {
+                            min-width: 100px;
+                            padding: 10px;
+                        }
+                        header .search-form {
+                            right: 20px;
+                            overflow: hidden;
+                        }
+                        header .search-form::after {
+                            display: none;
+                        }
+                        .booking-form {
+                            display: flex;
+                            width: 90%;
+                            justify-content: space-between;
+                        }
+                        /* .booking-form * {
+                        padding: 0 10px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    } */
+                        .content {
+                            max-width: 90%;
+                        }
+                        .booking-form {
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                    
+                    @media only screen and (max-width: 600px) {
+                        .nav,
+                        nav ul {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                        nav ul li {
+                            margin: 0 auto!important;
+                        }
+                        .room {
+                            margin-left: 20px;
+                            margin-right: 20px;
+                            max-width: 80%;
+                        }
+                        .room h3 {
+                            font-size: 20px;
+                        }
+                        .room .booking {
+                            flex-direction: column;
+                        }
+                        .booking .price {
+                            margin: 0 auto 20px auto;
+                        }
+                        .room p {
+                            width: 100%;
+                        }
+                        .room .room-content {
+                            margin: 10px auto;
+                            width: 100%;
+                            padding-top: 20px;
+                        }
+                        .room-foto {
+                            width: 100%;
+                            height: fit-content;
+                        }
+                        .room-content-second {
+                            width: 100%;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        .room-icons {
+                            display: none;
+                        }
+                    }
+                    
+                    @media only screen and (max-width: 375px) {
+                        .gallery {
+                            padding: 0 10px;
+                        }
+                        .gallery-img {
+                            flex: 100%;
+                            min-width: 50%;
+                            max-width: 100%;
+                        }
+                    }
